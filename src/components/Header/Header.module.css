@@ -1,0 +1,7 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 3px;
+    box-shadow: 3px 3px 2px var(--medium-grey-color), -3px 3px 2px var(--medium-grey-color);
+    margin: 3px;
+}
