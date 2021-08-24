@@ -1,6 +1,9 @@
-/*colors*/
 :root {
+    /*colors*/
     --gray-color: #6D6D6D;
     --medium-grey-color: #999999;
     --light-grey-color: #D6D6D6;
+
+    /*sizes*/
+    --main-image-height: 600px;
 }

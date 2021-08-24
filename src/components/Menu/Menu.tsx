@@ -1,11 +1,11 @@
 import React, { useMemo, useState } from 'react'
 import classnames from './Menu.module.css'
 import { MenuItem } from './MenuItem'
-import { SelenaLocation } from '../../api/dto/SelenaLocation'
+import { SelinaLocation } from '../../api/dto/SelinaLocation'
 import { uniq } from '../../helpers/uniq'
 
 interface Props {
-  locations: SelenaLocation[]
+  locations: SelinaLocation[]
 }
 
 export const Menu = ({ locations }: Props) => {

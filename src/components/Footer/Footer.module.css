@@ -1,5 +1,16 @@
 .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: var(--gray-color);
+}
+
+.footerPageImageContainer {
+    margin: 0 10px;
+    width: 30%;
+}
+
+.footerPageImageContainer img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
 }

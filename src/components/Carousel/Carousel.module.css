@@ -1,0 +1,4 @@
+.carousel .carouselImage img {
+    max-height: var(--main-image-height);
+    width: auto;
+}

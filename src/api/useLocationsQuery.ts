@@ -1,9 +1,9 @@
 import { useQuery } from 'react-query'
 import { LOCATION_API } from './apiConfig'
-import { SelenaLocation } from './dto/SelenaLocation'
+import { SelinaLocation } from './dto/SelinaLocation'
 
 export function useLocationsQuery() {
-  return useQuery<SelenaLocation[]>('locations', () =>
+  return useQuery<SelinaLocation[]>('locations', () =>
     fetch(`${LOCATION_API}`).then((res) => res.json()),
   )
 }

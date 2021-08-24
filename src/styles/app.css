@@ -9,4 +9,5 @@ html, body, #root {
 .content {
     max-width: 1200px;
     margin: auto;
+    max-height: 100vh;
 }

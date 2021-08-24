@@ -1,0 +1,8 @@
+.locationPage {
+    display: flex;
+    flex-direction: column;
+}
+
+.locationPageFlexItems {
+    padding: 10px 0;
+}

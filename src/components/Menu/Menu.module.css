@@ -20,6 +20,11 @@
     padding-left: 10px;
 }
 
+.subMenu a {
+    color: black;
+    text-decoration: none;
+}
+
 .subMenuItem {
     padding: 0 2px;
     cursor: pointer;
