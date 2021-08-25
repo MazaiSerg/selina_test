@@ -1,0 +1,10 @@
+.popoverProvider {
+    display: inline;
+}
+
+.popover {
+    padding: 5px;
+    background-color: white;
+    border: solid 1px var(--light-grey-color);
+    transform: translateY(-10px);
+}

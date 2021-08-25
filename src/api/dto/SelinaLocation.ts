@@ -4,9 +4,15 @@ type Contact = {
   website: string
 }
 
+export enum DirectionType {
+  CAR = 'CAR',
+  BUS = 'BUS',
+  PLANE = 'PLANE',
+}
+
 type Direction = {
   label: string
-  type: string
+  type: DirectionType
   value: string
 }
 

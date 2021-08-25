@@ -1,3 +1,5 @@
 export * from './Content/Content'
 export * from './Header/Header'
 export * from './Footer/Footer'
+export * from './Carousel/Carousel'
+export * from './LocationDescription/LocationDescription'

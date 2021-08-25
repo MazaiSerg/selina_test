@@ -1,0 +1,36 @@
+.locationName {
+    text-align: center;
+}
+
+.locationFeatures {
+    display: flex;
+    line-height: 25px;
+}
+
+.locationFeature {
+    height: 20px;
+    padding: 0 5px;
+}
+
+.locationFeature img {
+    height: 100%;
+    width: auto;
+}
+
+.locationDirections {
+    display: flex;
+    padding: 15px 0;
+}
+
+.locationDirectionsItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.locationDirectionsItem img {
+    height: 40px;
+    width: auto;
+    align-self: center;
+}

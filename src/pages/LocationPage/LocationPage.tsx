@@ -2,7 +2,7 @@ import React, { useMemo } from 'react'
 import { useParams } from 'react-router'
 import classnames from './LocationPage.module.css'
 import { useLocationsQuery } from '../../api/useLocationsQuery'
-import { Carousel } from '../../components/Carousel/Carousel'
+import { Carousel, LocationDescription } from '../../components'
 
 export const LocationPage = () => {
   const { name } = useParams<{ name: string }>()
@@ -25,16 +25,7 @@ export const LocationPage = () => {
         <Carousel photos={location.photos} name={location.name} />
       </div>
       <div className={classnames.locationPageFlexItems}>
-        <h2>{location.name}</h2>
-        <p>{location.description}</p>
-        <div>
-          Features:
-          {location.features.map((feature, index) => (
-            <div key={index}>
-              <img src={feature.image} alt={feature.label} />
-            </div>
-          ))}
-        </div>
+        <LocationDescription location={location} />
       </div>
       <div className={classnames.locationPageFlexItems}>events</div>
     </div>
