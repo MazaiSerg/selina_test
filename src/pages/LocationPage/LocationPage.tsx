@@ -3,6 +3,7 @@ import { useParams } from 'react-router'
 import classnames from './LocationPage.module.css'
 import { useLocationsQuery } from '../../api/useLocationsQuery'
 import { Carousel, LocationDescription } from '../../components'
+import { EventList } from '../../components'
 
 export const LocationPage = () => {
   const { name } = useParams<{ name: string }>()
@@ -27,7 +28,9 @@ export const LocationPage = () => {
       <div className={classnames.locationPageFlexItems}>
         <LocationDescription location={location} />
       </div>
-      <div className={classnames.locationPageFlexItems}>events</div>
+      <div className={classnames.locationPageFlexItems}>
+        <EventList locationId={location.id} />
+      </div>
     </div>
   )
 }
