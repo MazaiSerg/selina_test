@@ -2,14 +2,20 @@
     text-align: center;
 }
 
+.locationDescription {
+    padding: 0 20px;
+}
+
 .locationFeatures {
     display: flex;
+    flex-wrap: wrap;
     line-height: 25px;
+    padding: 0 20px;
 }
 
 .locationFeature {
     height: 20px;
-    padding: 0 5px;
+    padding: 5px;
 }
 
 .locationFeature img {
@@ -19,6 +25,8 @@
 
 .locationDirections {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding: 15px 0;
 }
 
@@ -27,6 +35,8 @@
     flex-direction: column;
     align-items: center;
     padding: 0 10px;
+    max-width: 30%;
+    min-width: 300px;
 }
 
 .locationDirectionsItem img {

@@ -1,16 +1,20 @@
 .footer {
     display: flex;
+    width: 100%;
     justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
     background-color: var(--gray-color);
+    min-height: 200px;
 }
 
 .footerPageImageContainer {
-    margin: 0 10px;
-    width: 30%;
+    padding: 20px;
+    height: 150px;
 }
 
 .footerPageImageContainer img {
-    width: 100%;
-    height: auto;
+    height: 100%;
+    width: auto;
     cursor: pointer;
 }

@@ -1,4 +1,35 @@
 .carousel div.carouselImage img {
-    max-height: var(--main-image-height);
+    max-height: 100%;
     width: auto;
 }
+
+.carouselImage {
+    display: flex;
+    justify-content: center;
+    height: var(--main-image-height-extra-large);
+}
+
+@media (max-width: 1000px){
+    .carouselImage {
+        height: var(--main-image-height-large);
+    }
+}
+
+@media (max-width: 800px){
+    .carouselImage {
+        height: var(--main-image-height-medium);
+    }
+}
+
+@media (max-width: 600px){
+    .carouselImage {
+        height: var(--main-image-height-small);
+    }
+}
+
+@media (max-width: 400px){
+    .carouselImage {
+        height: var(--main-image-height-extra-small);
+    }
+}
+

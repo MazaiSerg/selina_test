@@ -1,7 +1,7 @@
 import React from 'react'
 import classnames from './LocationDescription.module.css'
 import { SelinaLocation, DirectionType } from '../../api/dto/SelinaLocation'
-import { PopoverProvider } from '../PopoverProvider/PopoverProvider'
+import { PopoverProvider } from '../layouts'
 import plane from '../../icons/airplane.png'
 import bus from '../../icons/bus.png'
 import car from '../../icons/car-compact.png'
@@ -20,7 +20,7 @@ export const LocationDescription = ({ location }: Props) => {
   return (
     <>
       <h2 className={classnames.locationName}>{location.name}</h2>
-      <p>{location.description}</p>
+      <p className={classnames.locationDescription}>{location.description}</p>
       <div className={classnames.locationDirections}>
         {location.directions.map((direction, index) => {
           return (
@@ -40,6 +40,14 @@ export const LocationDescription = ({ location }: Props) => {
           </div>
         ))}
       </div>
+      <p className={classnames.locationDescription}>
+        phone: {location.contact.phones}
+        <br />
+        email: {location.contact.email}
+        <br />
+        website: <a href={location.contact.website}> {location.contact.website}</a>
+        <br />
+      </p>
     </>
   )
 }

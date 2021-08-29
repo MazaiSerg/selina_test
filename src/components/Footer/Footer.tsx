@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import classnames from './Footer.module.css'
 import { useLocationsQuery } from '../../api/useLocationsQuery'
 import { pickRandomItems } from '../../helpers/pickRandomItems'
+import { ImgLoader } from '../layouts'
 
 type PickedLocation = {
   name: string
@@ -37,7 +38,7 @@ export const Footer = () => {
         return (
           <div key={index} className={classnames.footerPageImageContainer}>
             <Link to={`/location/${location.name}`}>
-              <img src={location.imgUrl} alt={location.name} />
+              <ImgLoader src={location.imgUrl} alt={location.name} />
             </Link>
           </div>
         )

@@ -1,13 +1,8 @@
 
 
 html, body, #root {
-    height: 100%;
-    font-family: Circe, sans-serif;
+    font-family: SuisseBPIntl, sans-serif;
     font-size: 18px;
-}
-
-.content {
-    max-width: 1200px;
-    margin: auto;
-    max-height: 100vh;
+    padding: 0;
+    margin: 0;
 }

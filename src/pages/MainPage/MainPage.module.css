@@ -1,7 +1,34 @@
 .mainPageImageContainer {
+    display: flex;
+    justify-content: center;
+    height: var(--main-image-height-extra-large);
 }
 
 .mainPageImageContainer img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
+}
+
+@media (max-width: 1000px){
+    .mainPageImageContainer {
+        height: var(--main-image-height-large);
+    }
+}
+
+@media (max-width: 800px){
+    .mainPageImageContainer {
+        height: var(--main-image-height-medium);
+    }
+}
+
+@media (max-width: 600px){
+    .mainPageImageContainer {
+        height: var(--main-image-height-small);
+    }
+}
+
+@media (max-width: 400px){
+    .mainPageImageContainer {
+        height: var(--main-image-height-extra-small);
+    }
 }

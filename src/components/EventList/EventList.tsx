@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react'
 import { useEventsQuery } from '../../api/useEventsQuery'
 import classnames from './EventList.module.css'
 import { Event } from './Event'
-import { DatePicker, DatePickerValueType } from '../DatePicker/DatePicker'
+import { DatePicker, DatePickerValueType, Loader } from '../layouts'
 import { addFewDays } from '../../helpers/addFewDays'
 
 interface Props {
@@ -47,16 +47,20 @@ export const EventList = ({ locationId }: Props) => {
   )
 
   if (isLoading) {
-    return <>Events Loading</>
+    return <Loader />
   }
 
   if (!events || events.length === 0) {
-    return <span>{`Sorry, we don't have any information about events at this place :'(`}</span>
+    return (
+      <span
+        className={classnames.eventNotFound}
+      >{`Sorry, we don't have any information about events at this place :'(`}</span>
+    )
   }
 
   return (
     <div>
-      <h2>Event List</h2>
+      <h2 className={classnames.eventListHeader}>Event List</h2>
       <div className={classnames.eventList}>
         <DatePicker
           value={eventDates}
@@ -64,7 +68,9 @@ export const EventList = ({ locationId }: Props) => {
           className={classnames.eventListItem}
         />
         {!eventsToShow ? (
-          <span>{`Sorry, we don't have any information about events at this time:'(`}</span>
+          <span
+            className={classnames.eventNotFound}
+          >{`Sorry, we don't have any information about events at this time:'(`}</span>
         ) : (
           eventsToShow.map((event) => {
             return (

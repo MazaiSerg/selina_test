@@ -1,19 +1,31 @@
+.eventListHeader {
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
+.eventNotFound {
+    padding: 0 20px;
+}
+
+
 .eventList{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
     padding: 20px;
 }
 
 .eventListItem {
     min-width: 250px;
-    max-width: 33%;
+    max-width: 30%;
+    padding: 10px 10px;
 }
 
 .event {
     display: flex;
     flex-direction: column;
-    padding: 10px 20px;
+    justify-content: space-around;
 }
 
 .event>h4{
@@ -26,13 +38,12 @@
 }
 
 .imageContainer {
-    max-height: 200px;
+    height: 200px;
     display: flex;
     justify-content: center;
 }
 
 .imageContainer img {
     height: 100%;
-    max-height: 200px;
     width: auto;
 }

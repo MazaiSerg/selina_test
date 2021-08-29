@@ -1,9 +1,13 @@
 :root {
     /*colors*/
-    --gray-color: #6D6D6D;
+    --gray-color: #323232;
     --medium-grey-color: #999999;
     --light-grey-color: #D6D6D6;
 
     /*sizes*/
-    --main-image-height: 600px;
+    --main-image-height-extra-large: 700px;
+    --main-image-height-large: 550px;
+    --main-image-height-medium: 450px;
+    --main-image-height-small: 300px;
+    --main-image-height-extra-small: 200px;
 }

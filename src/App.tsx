@@ -7,7 +7,7 @@ import { LocationPage } from './pages/LocationPage/LocationPage'
 
 function App() {
   return (
-    <div className="content">
+    <div>
       <Header />
       <Content>
         <Switch>
